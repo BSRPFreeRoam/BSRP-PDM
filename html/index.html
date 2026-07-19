@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>BS Race PDM</title>
+    <style>html, body { background: transparent !important; }</style>
+    <link rel="stylesheet" href="style.css" />
+</head>
+<body style="background: transparent !important;">
+    <div id="app" class="hidden">
+        <div class="shell">
+            <div class="panel left">
+                <div class="edge edge-top"></div>
+                <div class="edge edge-bottom"></div>
+                <div class="corner c-tl"></div>
+                <div class="corner c-tr"></div>
+                <div class="corner c-bl"></div>
+                <div class="corner c-br"></div>
+                <div class="glow-bar"></div>
+
+                <div class="brand">
+                    <div class="badge"><span class="pulse-dot"></span> FREE</div>
+                    <h1 id="shopName">PDM // SHOWROOM</h1>
+                    <div class="tag" id="subtitle">VEHICLES // FREE CLAIM</div>
+                    <div class="brand-line"></div>
+                </div>
+
+                <div class="search-wrap">
+                    <input type="text" id="search" placeholder="Search vehicles…" maxlength="40" autocomplete="off" />
+                </div>
+
+                <div class="cats fx-scroll" id="categories"></div>
+
+                <div class="left-actions">
+                    <button type="button" class="btn danger" id="btnClose">CLOSE</button>
+                </div>
+            </div>
+
+            <div class="panel mid">
+                <div class="edge edge-top"></div>
+                <div class="edge edge-bottom"></div>
+                <div class="corner c-tl"></div>
+                <div class="corner c-tr"></div>
+                <div class="corner c-bl"></div>
+                <div class="corner c-br"></div>
+                <div class="glow-bar"></div>
+
+                <div class="right-head">
+                    <div class="section-tag">CATALOG</div>
+                    <h2 id="sectionTitle">Select a class</h2>
+                </div>
+                <div class="veh-list fx-scroll" id="vehicleList">
+                    <div class="empty-hint">Choose a category on the left.</div>
+                </div>
+            </div>
+
+            <div class="panel right">
+                <div class="edge edge-top"></div>
+                <div class="edge edge-bottom"></div>
+                <div class="corner c-tl"></div>
+                <div class="corner c-tr"></div>
+                <div class="corner c-bl"></div>
+                <div class="corner c-br"></div>
+                <div class="glow-bar"></div>
+
+                <div class="right-head">
+                    <div class="section-tag">PREVIEW</div>
+                    <h2 id="vehTitle">No vehicle</h2>
+                    <div class="veh-model" id="vehModel">—</div>
+                </div>
+
+                <div class="stats" id="stats">
+                    <div class="stat"><span>ENGINE</span><b id="stEngine">—</b></div>
+                    <div class="stat"><span>BRAKES</span><b id="stBrakes">—</b></div>
+                    <div class="stat"><span>SUSP.</span><b id="stSusp">—</b></div>
+                    <div class="stat"><span>TRANS.</span><b id="stTrans">—</b></div>
+                    <div class="stat"><span>ARMOR</span><b id="stArmor">—</b></div>
+                    <div class="stat"><span>SEATS</span><b id="stSeats">—</b></div>
+                </div>
+
+                <div class="price-row">
+                    <span class="price-label">PRICE</span>
+                    <span class="price-val" id="priceVal">FREE</span>
+                </div>
+
+                <div class="color-label">PAINT</div>
+                <div class="colors" id="colors"></div>
+
+                <div class="cam-bar">
+                    <button type="button" class="cam-btn" id="btnSpin" title="Spin">⟳</button>
+                    <button type="button" class="cam-btn" id="btnZoomIn" title="Zoom in">＋</button>
+                    <button type="button" class="cam-btn" id="btnZoomOut" title="Zoom out">－</button>
+                </div>
+
+                <div class="right-actions">
+                    <button type="button" class="btn ghost" id="btnTest">TEST DRIVE</button>
+                    <button type="button" class="btn primary" id="btnClaim">CLAIM</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
